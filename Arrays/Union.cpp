@@ -39,3 +39,23 @@ vector<int> findUnion(vector<int> &a, vector<int> &b) {
     }
     return res;
 }
+
+int main(){
+    int n;
+    cin >> n;
+    int m;
+    cin >> m;
+    vector<int> a(n);
+    for(int i = 0; i < a.size(); i++){
+        cin >> a[i];
+    }
+    vector<int> b(n);
+    for(int i = 0; i < b.size(); i++){
+        cin >> b[i];
+    }
+    vector<int> ans = findUnion(a,b);
+    for(int i = 0; i < ans.size(); i++){
+        cout << ans[i] << " ";
+    }
+    return 0;
+}
