@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
 
-// Optimal Approach (No Brute)
+// Optimal Approach (No Brute Force)
+// Time Complexity: O(N)
+// Space Complexity: O(1)
 void leftRotate(vector<int> &nums){
     int temp = nums[0];
     for(int i = 0; i < nums.size()-1; i++){
