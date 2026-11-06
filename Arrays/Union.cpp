@@ -3,7 +3,7 @@ using namespace std;
 
 // Optimal Solution (No Brute Force)
 // Time Complexity: O(2N logN + n1 + n2)
-// Spoace Complexity: O(n1+n2)
+// Space Complexity: O(n1+n2)
 vector<int> intersection(vector<int>& a, vector<int>& b) {
     int i = 0;
     int j = 0;
