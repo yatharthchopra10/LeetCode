@@ -3,10 +3,18 @@ using namespace std;
 
 // Brute Force Approach
 // Time Complexity: 
-// Space COmplexity: 
+// Space Complexity: 
 void leftRotate(vector<int> &nums){
 
 }
+
+// Better Solution
+// Time Complexity:
+// Space Complexity:
+
+// Optimal Solution
+// Time Complexity:
+// Space Complexity:
 
 int main(){
     return 0;
