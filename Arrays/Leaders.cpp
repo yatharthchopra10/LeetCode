@@ -33,7 +33,6 @@ vector<int> leaders(vector<int> &a){
     return ans;
 }
 
-
 int main(){
     int n;
     cin >> n;
