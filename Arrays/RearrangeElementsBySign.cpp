@@ -2,7 +2,7 @@
 using namespace std;
 
 // Brute Force Solution
-// Time Complexity: O(2N)
+// Time Complexity: O(N) + O(N/2)
 // Space Complexity: O(1)
 vector<int> rearrangeSignBrute(vector<int> &a){
     vector<int> pos;
@@ -19,23 +19,15 @@ vector<int> rearrangeSignBrute(vector<int> &a){
             negi++;
         }
     }
-    posi = 0;
-    negi = 0;
 
     for(int i = 0; i < a.size(); i++){
-        if(i % 2 == 0){
-            a[i] = pos[posi];
-            posi++;
-        }
-        else{
-            a[i] = neg[negi];
-            negi++;
-        }
+        a[2*i] = pos[i];
+        a[2*i+1] = neg[i];
     }
     return a;
 }
 
-// Optimal Solution
+// Optimal Solution -> If mentioned that it is not necessary that positives are equal to negatives then we fall back to the Brute Force Solution.
 // Time Complexity: O(N)
 // Space Complexity: O(N)
 vector<int> rearrangeSign(vector<int> &a){
@@ -53,6 +45,8 @@ vector<int> rearrangeSign(vector<int> &a){
     }
     return ans;
 }
+
+// Time Complexity (if mentioned that positives != negatives): O(N) + O(min(pos, neg)) + O(leftovers) which in the worst case implies to O(2N)
 
 int main(){
     int n;
