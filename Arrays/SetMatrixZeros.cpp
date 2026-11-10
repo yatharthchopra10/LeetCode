@@ -121,6 +121,6 @@ int main(){
     vector<vector<int>> a(n, vector<int> (m));
     for(int i = 0; i < n; i++) for(int j = 0; j < m; j++) cin >> a[i][j];
     vector<vector<int>> res = setMatrixZeros(a);
-    for(int i = 0; i < n; i++) for(int j = 0; j < m; j++) cout << a[i][j];
+    for(int i = 0; i < n; i++) for(int j = 0; j < m; j++) cout << res[i][j];
     return 0;
 }
