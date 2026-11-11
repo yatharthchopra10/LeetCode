@@ -51,11 +51,11 @@ vector<int> majority(vector<int> &a){
     int el2 = a[0];
     vector<int> ans;
     for(int i = 0; i < a.size(); i++){
-        if(count1 == 0 && a[i] != el1){
+        if(count1 == 0 && a[i] != el2){
             el1 = a[i];
             count1 = 1;
         }
-        else if(count2 == 0){
+        else if(count2 == 0 && a[i] != el1){
             el2 = a[i];
             count2 = 1;
         }
