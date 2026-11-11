@@ -73,7 +73,7 @@ vector<int> majority(vector<int> &a){
         if(a[i] == el1) count1++;
         else if(a[i] == el2) count2++;
     }
-
+ 
     if(count1 > a.size()/3) ans.push_back(el1);
     if(count2 > a.size()/3) ans.push_back(el2);
 
