@@ -22,6 +22,8 @@ vector<int> leadersBrute(vector<int> &a){
 }
 
 // Optimal Solution
+// Time complexity: O(N)
+// Space Complexity: O(1)
 vector<int> leaders(vector<int> &a){
     int maxi = INT_MIN;
     vector<int> ans;
