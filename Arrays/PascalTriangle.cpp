@@ -24,9 +24,9 @@ int generateElement(int n, int r){
 vector<int> generateRow(int n){
     vector<int> ans;
     long long res = 1;
-    for(int i = 0; i < n; i++){
-        res *= n - i;
-        res /= i;
+    ans.push_back(1);
+    for(int i = 1; i < n; i++){
+        res = res * (n - i)/i;
         ans.push_back(res);
     }
     return ans;
@@ -37,7 +37,7 @@ vector<int> generateRow(int n){
 // Space Complexity: O(1) -> vector used to store array and not for performing calculations
 vector<vector<int>> generateTriangle(int n){
     vector<vector<int>> ans;
-    for(int i = 0; i < n; i++){
+    for(int i = 1; i <= n; i++){
         ans.push_back(generateRow(i));
     }
     return ans;
