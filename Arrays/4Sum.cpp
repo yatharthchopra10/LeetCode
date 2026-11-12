@@ -1,7 +1,11 @@
 #include<iostream>
 using namespace std;
 
+// Brute force Solution and Better Solution similar to 3 Sum problem
+
 // Optimal Solution
+// Time Complexity: O(N^3)
+// Space Complexity: O(1)
 vector<vector<int>> fourSum(vector<int> &a, int target){
     vector<vector<int>> ans;
     sort(a.begin(), a.end());
