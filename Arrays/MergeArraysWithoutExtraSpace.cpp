@@ -26,6 +26,8 @@ void mergeOptimal(long long arr1[], long long arr2[], int n, int m){
 }
 
 // Optimal Solution #2 -> Inspired from Shell Sort which works on the principle of gaps.
+// Time Complexity: O(log (n+m) * (n+m))
+// Space Complexity: O(1) 
 void mergeOptimalFinal(long long arr1[], long long arr2[], int n, int m){
     int len = n + m;
     int gap = len / 2 + len % 2;
@@ -45,7 +47,10 @@ void mergeOptimalFinal(long long arr1[], long long arr2[], int n, int m){
             else{
                 swapIfGreater(arr1, arr2, left, right);
             }
+            left++; right++;
         }
+        if(gap == 1) break;
+        gap = gap / 2 + gap % 2;
     }
 }
 
