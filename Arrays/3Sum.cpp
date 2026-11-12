@@ -22,6 +22,8 @@ vector<vector<int>> threeSumBrute(vector<int> &a){
 }
 
 // Better Solution
+// Time Complexity: O(N^2)
+// Space Complexity: O(N)
 vector<vector<int>> threeSumBetter(vector<int> &a){
     set<vector<int>> st;
     for(int i = 0; i < a.size(); i++){
