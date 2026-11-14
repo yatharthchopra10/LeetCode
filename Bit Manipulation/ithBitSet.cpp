@@ -5,14 +5,12 @@ using namespace std;
 
 // Optimal Solution #1 -> Left Shift Operator
 bool setOrNoSetLeft(int n, int i){
-    if((n & 1 << i) != 0) return true;
-    else return false;
+    return (n & 1 << i) != 0;
 }
 
 // Optimal Solution #2 -> Right Shift Operator
 bool setOrNoSetRight(int n, int i){
-    if(((n >> i) & 1) == 0) return false;
-    else return true;
+    return ((n >> i) & 1) == 0;
 }
 
 int main(){
