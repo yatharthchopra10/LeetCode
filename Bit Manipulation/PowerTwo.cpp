@@ -5,7 +5,7 @@ using namespace std;
 
 // Optimal Solution -> n & (n-1) == 0
 bool powerTwo(int n){
-    return (n & (n-1)) == 0;
+    return n > 0 && (n & (n-1)) == 0;
 }
 
 int main(){
