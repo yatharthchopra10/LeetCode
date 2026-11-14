@@ -7,9 +7,7 @@ bool lemonadeChange(vector<int> &a){
     int five = 0;
     int ten = 0;
     for(int i = 0; i < a.size(); i++){
-        if(a[i] == 5){
-            five++;
-        }
+        if(a[i] == 5) five++;
         else if(a[i] == 10){
             if(five){
                 ten++;
@@ -22,9 +20,7 @@ bool lemonadeChange(vector<int> &a){
                 ten--;
                 five--;
             }
-            else if(five >= 3){
-                five -= 3;
-            }
+            else if(five >= 3) five -= 3;
             else return false;
         }
     }
