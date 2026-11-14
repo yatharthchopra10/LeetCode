@@ -13,6 +13,7 @@ int numberSetBitsArithmetic(int n){
 }
 
 // Solution using Bit Manipulatio for finding odd numbers and for dividing a number.
+// Time Complexity: O(log N with base 2)
 int numberSetBitsProper(int n){
     int count = 0;
     while (n > 1){
@@ -20,6 +21,17 @@ int numberSetBitsProper(int n){
         n = n >> 1;
     }
     if(n == 1) count++;
+    return count;
+}
+
+// Another Solution using Bit Manipulation using & Operator -> Better Approach than the previous one due to its time complexity.
+// Time Complexity: O(no. of set bits)
+int numberSetBitsFinal(int n){
+    int count = 0;
+    while(n != 0){
+        n = n & (n-1);
+        count++;
+    }
     return count;
 }
 
