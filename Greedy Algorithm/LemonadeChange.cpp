@@ -16,7 +16,7 @@ bool lemonadeChange(vector<int> &a){
             else return false;
         }
         else{
-            if(ten & five){
+            if(ten && five){
                 ten--;
                 five--;
             }
