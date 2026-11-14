@@ -5,8 +5,7 @@ using namespace std;
 
 // Optimal Solution -> Shift Operator
 bool setOrNoSet(int n, int i){
-    int check = 1 << i;
-    if((n & check) != 0) return true;
+    if((n & 1 << i) != 0) return true;
     else return false;
 }
 
