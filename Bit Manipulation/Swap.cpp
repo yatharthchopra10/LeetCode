@@ -18,8 +18,7 @@ void swap(int a, int b){
 }
 
 int main(){
-    int a;
-    int b;
+    int a, b;
     cin >> a >> b;
     swap(a, b);
     return 0;
