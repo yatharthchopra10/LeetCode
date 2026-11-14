@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// Time Complexity: O(N)
+// Time Complexity: O(N) + O(N log N)
 // Space Complexity: O(1)
 float shortestJobFirst(vector<int> &a){
     sort(a.begin(), a.end());
