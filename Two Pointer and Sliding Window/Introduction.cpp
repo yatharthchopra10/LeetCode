@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
 
-// Constant Window
+// 1. Constant Window
+// Time Complexity: O(2N)
+// Space Compelxity: O(1)
 int constantWindow(vector<int> &a, int k){
     int sum = 0;
     int maxi = 0;
@@ -18,7 +20,7 @@ int constantWindow(vector<int> &a, int k){
     return maxi;
 }
 
-// Longest Subarray/Substring with some condition
+// 2. Longest Subarray/Substring with some condition
 // Proceed with Brute Force -> Better -> Optimal
 // Time Complexity for Brute Force is O(N^2), O(2N) for Better and O(N) for Optimal.
 // Better Solution (Use two for loops for Brute Force Solution)
@@ -60,3 +62,7 @@ int subarraySum(vector<int> &a, int k){
     }
     return maxi;
 }
+
+// 3. Number of subarrays with some condition -> solved using question 2
+
+// 4. Shortest/ Minimum window with some condition
