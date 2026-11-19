@@ -14,7 +14,6 @@ int countFre(int num, vector<int> &a) {
     }
     return count;
 }
-
 ```
 
 ### Threat Assessment
