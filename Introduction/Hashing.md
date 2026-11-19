@@ -4,7 +4,7 @@
 
 **The Amateur Approach:** You send an operative to interrogate every single person in the crowd from start to finish, counting matches one by one. For $Q$ different targets, you repeat this entire sweep from scratch.
 
-```
+```C++
 int countFre(int num, vector<int> &a) {
     int count = 0;
     for (int i = 0; i < a.size(); i++) {
