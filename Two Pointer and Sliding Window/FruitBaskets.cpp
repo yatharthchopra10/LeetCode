@@ -56,7 +56,7 @@ int fruitBaskets(vector<int> &a, int k){
             if(mpp[a[l]] == 0) mpp.erase(a[l]);
             l++;
         }
-        if(mpp.size() <= k) maxi = max(maxi, l-r+1);
+        if(mpp.size() <= k) maxi = max(maxi, r-l+1);
         r++;
     }
     return maxi;
