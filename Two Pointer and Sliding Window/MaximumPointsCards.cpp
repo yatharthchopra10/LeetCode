@@ -13,7 +13,7 @@ int maximumPoints(vector<int> &a, int k){
     }
     for(int i = k - 1; i > 0; i--){
         lsum -= a[i];
-        rsum += a[i];
+        rsum += a[r];
         r--;
         maxi = max(maxi, lsum + rsum);
     }
