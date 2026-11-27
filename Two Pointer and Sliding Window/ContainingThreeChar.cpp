@@ -16,7 +16,7 @@ int containThreeChar(string s){
         // if(lastSeen[0] != -1 && lastSeen[1] != -1 && lastSeen[2] != -1){
         //     count += (1 + min(lastSeen[0] ,lastSeen[1], lastSeen[2]));
         // }
-        count += (1 + min(lastSeen[0] ,lastSeen[1], lastSeen[2]));
+        count += (1 + min({lastSeen[0] ,lastSeen[1], lastSeen[2]}));
     }
     return count;
 }
