@@ -30,7 +30,7 @@ int longestCharReplaceBetter(string s, int k){
     int r = 0;
     while(r < s.size()){
         maxFreq = max(maxFreq, ++hash[s[r] - 'A']);
-        while((r-l+1) - maxFreq > k){
+        while((r - l + 1) - maxFreq > k){
             hash[s[l] - 'A']--;
             maxFreq = 0;
             for(int i = 0; i < 26; i++){
@@ -38,8 +38,8 @@ int longestCharReplaceBetter(string s, int k){
                 l++;
             }
         }
-        if((r-l+1) <= k){
-            maxi = max(maxi, (r-l+1));
+        if((r - l + 1) <= k){
+            maxi = max(maxi, (r - l + 1));
         }
         r++;
     }
@@ -57,12 +57,12 @@ int longestCharReplaceBetterFinal(string s, int k){
     int r = 0;
     while(r < s.size()){
         maxFreq = max(maxFreq, ++hash[s[r] - 'A']);
-        while((r-l+1) - maxFreq > k){
+        while((r - l + 1) - maxFreq > k){
             hash[s[l] - 'A']--;
             l++;
         }
-        if((r-l+1) <= k){
-            maxi = max(maxi, (r-l+1));
+        if((r - l + 1) <= k){
+            maxi = max(maxi, (r - l + 1));
         }
         r++;
     }
@@ -80,11 +80,11 @@ int longestCharReplace(string s, int k){
     int r = 0;
     while(r < s.size()){
         maxFreq = max(maxFreq, ++hash[s[r] - 'A']);
-        if((r-l+1) - maxFreq > k){
+        if((r - l + 1) - maxFreq > k){
             hash[s[l] - 'A']--;
             l++;
         }
-        if((r-l+1) <= k) maxi = max(maxi, (r-l+1));
+        if((r - l + 1) <= k) maxi = max(maxi, (r - l + 1));
         r++;
     }
     return maxi;
